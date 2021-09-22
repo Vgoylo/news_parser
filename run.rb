@@ -19,3 +19,10 @@ sample_image = images.sample
 
 p sample_image.url.display
 
+out_file = File.new("out.txt", "w")
+
+images.each do |image|
+  out_file.puts(images)
+end
+
+out_file.close
